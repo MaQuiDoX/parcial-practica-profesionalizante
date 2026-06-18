@@ -67,12 +67,14 @@
                 <div class="col-sm-6 col-lg-3 fade-up">
                     <article class="pet-card">
                         <div class="pet-img-wrap">
-                            <span class="pet-emoji" role="img" aria-label="Perro">🐶</span>
+                            <img src="lupitafacu.png" alt="Bruno" class="pet-image">
                             <span class="pet-badge">Perro</span>
                         </div>
                         <div class="pet-card-body">
                             <h4>Bruno</h4>
-                            <p class="pet-meta"><i class="bi bi-calendar3"></i> 2 años · Macho · Mediano</p>
+                            <p class="pet-meta">
+                                <i class="bi bi-calendar3"></i> 2 años · Macho · Mediano
+                            </p>
                             <a href="adopcion.html" class="btn-pet">Ver más</a>
                         </div>
                     </article>
@@ -82,18 +84,20 @@
                 <div class="col-sm-6 col-lg-3 fade-up">
                     <article class="pet-card">
                         <div class="pet-img-wrap">
-                            <span class="pet-emoji" role="img" aria-label="Perro">🐕</span>
+                            <img src="mushunico.png" alt="Bruno" class="pet-image">
                             <span class="pet-badge">Perro</span>
                         </div>
                         <div class="pet-card-body">
-                            <h4>Nala</h4>
-                            <p class="pet-meta"><i class="bi bi-calendar3"></i> 3 años · Hembra · Grande</p>
+                            <h4>Bruno</h4>
+                            <p class="pet-meta">
+                                <i class="bi bi-calendar3"></i> 2 años · Macho · Mediano
+                            </p>
                             <a href="adopcion.html" class="btn-pet">Ver más</a>
                         </div>
                     </article>
                 </div>
 
-                
+
             </div>
 
             <div class="text-center mt-5 fade-up">
@@ -151,7 +155,8 @@
 
                 <hr class="footer-divider">
                 <p class="footer-copy text-center">
-                    © 2026 Refugio Huellitas en busca de un hogar. IES 9-008 "Manuel Belgrano". Práctica Profesionalizante 1° 4°
+                    © 2026 Refugio Huellitas en busca de un hogar. IES 9-008 "Manuel Belgrano". Práctica
+                    Profesionalizante 1° 4°
                 </p>
             </div>
         </footer>
@@ -496,6 +501,14 @@
             .pet-card-body h4 {
                 font-size: 1.15rem;
                 margin-bottom: .3rem;
+            }
+
+            .pet-image {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                display: block;
+                border-radius: 12px 12px 0 0;
             }
 
             .pet-meta {
