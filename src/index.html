@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Manuel Quesada">
+  <meta name="description"
+    content="Refugio Huellitas en busca de un hogar - Adopción responsable de mascotas en Mendoza">
+  <meta name="keywords" content="adopción, mascotas, perros, gatos, refugio, Mendoza">
+  <title>Huellitas en busca de un hogar</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-huellitas navbar-expand-lg" aria-label="Navegación principal">
+    <div class="container">
+
+      <a class="navbar-brand-logo" href="index.html">
+        <span class="paw" aria-hidden="true">🐾</span>
+        Huellitas
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link-custom active" href="index.html" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="perros.html">Perros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="gatos.html">Gatos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="adopcion.html">Adopción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-lg-6">
+          <span class="hero-eyebrow">🐾 Refugio en Mendoza</span>
+          <h1 class="hero-title">
+            Dale un hogar a quien<br>
+            <span class="accent">te lo dará todo</span>
+          </h1>
+          <p class="hero-subtitle">
+            En Huellitas rescatamos, cuidamos y encontramos familias responsables
+            para perros y gatos que esperan una segunda oportunidad.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+
+            <a href="perros.html" class="btn-hero-secondary">Conoce a nuestros perros</a>
+            <a href="gatos.html" class="btn-hero-terciary">Conoce a nuestros gatos</a>
+            <a href="adopcion.html" class="btn-hero-primary">Quiero adoptar</a>
+
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>+120</strong>
+              <span>Mascotas rescatadas</span>
+            </div>
+            <div class="hero-stat">
+              <strong>84</strong>
+              <span>Adoptadas este año</span>
+            </div>
+            <div class="hero-stat">
+              <strong>36</strong>
+              <span>En busca de hogar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="hero-animal" aria-hidden="true">🐶🐱</div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <section class="section-mision" id="mision" aria-labelledby="mision-titulo">
+    <div class="container">
+
+      <div class="text-center mb-5 fade-up">
+        <p class="section-label">Quiénes somos</p>
+        <h2 class="section-title" id="mision-titulo">Nuestra misión y visión</h2>
+        <p class="text-muted mx-auto" style="max-width:560px; line-height:1.7;">
+          Creemos que cada animal merece amor, cuidado y un hogar seguro.
+          Trabajamos todos los días para hacer eso posible.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4 fade-up">
+          <div class="mission-card">
+            <span class="mission-icon" aria-hidden="true">❤️</span>
+            <h3>Misión</h3>
+            <p>Rescatar animales en situación de abandono o riesgo, brindarles atención
+              veterinaria y afecto, y conectarlos con familias que los adopten
+              responsablemente.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-up">
+          <div class="mission-card">
+            <span class="mission-icon" aria-hidden="true">🌟</span>
+            <h3>Visión</h3>
+            <p>Ser un refugio referente en Mendoza donde ningún animal quede sin hogar,
+              promoviendo una cultura de adopción responsable y bienestar animal en
+              toda la comunidad.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-up">
+          <div class="mission-card">
+            <span class="mission-icon" aria-hidden="true">🤝</span>
+            <h3>Valores</h3>
+            <p>Actuamos con empatía, transparencia y compromiso. Creemos en el
+              voluntariado, el trabajo en red y en que la adopción siempre es mejor
+              que la compra.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <form id="formContacto" class="form-huellitas" novalidate>
+
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="brand">🐾 Huellitas</div>
+            <p>Refugio de mascotas dedicado al rescate, cuidado y adopción responsable en Mendoza, Argentina.</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-title">Páginas</div>
+            <nav aria-label="Footer - Páginas">
+              <a href="index.html" class="footer-link">Inicio</a>
+              <a href="perros.html" class="footer-link">Perros</a>
+              <a href="gatos.html" class="footer-link">Gatos</a>
+              <a href="adopcion.html" class="footer-link">Adopción</a>
+              <a href="contacto.html" class="footer-link">Contacto</a>
+            </nav>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-title">Contacto</div>
+            <p class="footer-link" style="cursor:default">📧 huellitas@refugio.com</p>
+            <p class="footer-link" style="cursor:default">📞 +54 261 555-0000</p>
+            <p class="footer-link" style="cursor:default">📍 Los Nogales 1234, Mendoza</p>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="footer-title">Horarios</div>
+            <p class="footer-link" style="cursor:default">Lun – Vie: 9:00 – 18:00 hs</p>
+            <p class="footer-link" style="cursor:default">Sábado: 10:00 – 14:00 hs</p>
+            <p class="footer-link" style="cursor:default">Domingo: Cerrado</p>
+          </div>
+
+        </div>
+
+        <hr class="footer-divider">
+        <p class="footer-copy text-center">
+          © 2026 Refugio Huellitas en busca de un hogar · IES 9-008 "Manuel Belgrano" ·
+          Práctica Profesionalizante 1° 4° · Desarrollado por el equipo de 1° 4° Desarrollo de Software
+        </p>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <style>
+      :root {
+        --naranja: #E8622A;
+        --naranja-cl: #F9895A;
+        --crema: #FFF8F2;
+        --marron: #2D1B0E;
+        --gris: #6C7A6D;
+        --blanco: #FFFFFF;
+        --sombra: 0 4px 24px rgba(232, 98, 42, .15);
+      }
+
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background: var(--crema);
+        color: var(--marron);
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      .display-font {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar-huellitas {
+        background: var(--blanco);
+        box-shadow: 0 2px 16px rgba(45, 27, 14, .08);
+        padding: .9rem 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: box-shadow .3s;
+      }
+
+      .navbar-brand-logo {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 1.35rem;
+        color: var(--naranja) !important;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        text-decoration: none;
+      }
+
+      .navbar-brand-logo span.paw {
+        font-size: 1.5rem;
+        display: inline-block;
+        transition: transform .3s;
+      }
+
+      .navbar-brand-logo:hover .paw {
+        transform: rotate(-20deg) scale(1.15);
+      }
+
+      .nav-link-custom {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: var(--marron) !important;
+        padding: .4rem .9rem !important;
+        border-radius: 8px;
+        transition: background .2s, color .2s;
+        text-decoration: none;
+      }
+
+      .nav-link-custom:hover,
+      .nav-link-custom.active {
+        background: var(--naranja);
+        color: var(--blanco) !important;
+      }
+
+      /* hamburguesa personalizada */
+      .navbar-toggler {
+        border: 2px solid var(--naranja);
+        border-radius: 8px;
+        padding: .35rem .6rem;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23E8622A' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        background: linear-gradient(135deg, var(--naranja) 0%, #C94A18 100%);
+        min-height: 88vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='10' y='40' font-size='30' opacity='.07' fill='white'%3E🐾%3C/text%3E%3C/svg%3E") repeat;
+        pointer-events: none;
+      }
+
+      .hero-eyebrow {
+        display: inline-block;
+        background: rgba(255, 255, 255, .18);
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: .85rem;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        padding: .35rem 1rem;
+        border-radius: 999px;
+        margin-bottom: 1.2rem;
+      }
+
+      .hero-title {
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        line-height: 1.1;
+        color: var(--blanco);
+        margin-bottom: 1.2rem;
+      }
+
+      .hero-title .accent {
+        color: #FFD580;
+      }
+
+      .hero-subtitle {
+        color: rgba(255, 255, 255, .88);
+        font-size: 1.15rem;
+        max-width: 520px;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      .btn-hero-primary {
+        background: var(--blanco);
+        color: var(--naranja);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        border: none;
+        border-radius: 12px;
+        padding: .85rem 2rem;
+        font-size: 1rem;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+        transition: transform .2s, box-shadow .2s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-hero-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, .22);
+        color: var(--naranja);
+      }
+
+      .btn-hero-secondary {
+        background: transparent;
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        border: 2px solid rgba(255, 255, 255, .55);
+        border-radius: 12px;
+        padding: .82rem 1.8rem;
+        font-size: 1rem;
+        transition: background .2s, border-color .2s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-hero-secondary:hover {
+        background: rgba(255, 255, 255, .12);
+        border-color: var(--blanco);
+        color: var(--blanco);
+      }
+
+      .btn-hero-terciary {
+        background: transparent;
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        border: 2px solid rgba(255, 255, 255, .55);
+        border-radius: 12px;
+        padding: .82rem 1.8rem;
+        font-size: 1rem;
+        transition: background .2s, border-color .2s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-hero-terciary:hover {
+        background: rgba(255, 255, 255, .12);
+        border-color: var(--blanco);
+        color: var(--blanco);
+      }
+
+      /* ilustración hero */
+      .hero-animal {
+        font-size: clamp(6rem, 14vw, 11rem);
+        text-align: center;
+        animation: float 3.5s ease-in-out infinite;
+        user-select: none;
+        filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .2));
+      }
+
+      @keyframes float {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-18px);
+        }
+      }
+
+      /* stats rápidas */
+      .hero-stats {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-stat strong {
+        display: block;
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #FFD580;
+        line-height: 1;
+      }
+
+      .hero-stat span {
+        color: rgba(255, 255, 255, .8);
+        font-size: .82rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+      }
+
+      /* ===== SECCIÓN: MISIÓN ===== */
+      .section-mision {
+        padding: 6rem 0;
+        background: var(--blanco);
+      }
+
+      .section-label {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: .8rem;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--naranja);
+        margin-bottom: .6rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        margin-bottom: 1.2rem;
+        color: var(--marron);
+      }
+
+      .mission-card {
+        background: var(--crema);
+        border-radius: 20px;
+        padding: 2.4rem 2rem;
+        height: 100%;
+        border: none;
+        transition: transform .25s, box-shadow .25s;
+      }
+
+      .mission-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--sombra);
+      }
+
+      .mission-icon {
+        font-size: 2.4rem;
+        margin-bottom: 1.1rem;
+        display: block;
+      }
+
+      .mission-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: .7rem;
+        color: var(--marron);
+      }
+
+      .mission-card p {
+        color: var(--gris);
+        font-size: .95rem;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      /* ===== SECCIÓN: MASCOTAS DESTACADAS ===== */
+      .section-mascotas {
+        padding: 6rem 0;
+        background: var(--crema);
+      }
+
+      .pet-card {
+        background: var(--blanco);
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 2px 12px rgba(45, 27, 14, .06);
+        transition: transform .25s, box-shadow .25s;
+        position: relative;
+      }
+
+      .pet-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--sombra);
+      }
+
+      .pet-img-wrap {
+        position: relative;
+        background: var(--crema);
+        padding: 1.5rem 1.5rem 0;
+        text-align: center;
+      }
+
+      .pet-emoji {
+        font-size: 5rem;
+        display: block;
+        filter: drop-shadow(0 4px 12px rgba(45, 27, 14, .1));
+        transition: transform .3s;
+      }
+
+      .pet-card:hover .pet-emoji {
+        transform: scale(1.1) rotate(-5deg);
+      }
+
+      .pet-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: var(--naranja);
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: .75rem;
+        padding: .25rem .75rem;
+        border-radius: 999px;
+      }
+
+      .pet-card-body {
+        padding: 1.4rem 1.5rem 1.6rem;
+      }
+
+      .pet-card-body h4 {
+        font-size: 1.15rem;
+        margin-bottom: .3rem;
+      }
+
+      .pet-meta {
+        font-size: .82rem;
+        color: var(--gris);
+        margin-bottom: .9rem;
+      }
+
+      .btn-pet {
+        background: var(--crema);
+        color: var(--naranja);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        border: 2px solid var(--naranja);
+        border-radius: 10px;
+        padding: .45rem 1.3rem;
+        font-size: .9rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: background .2s, color .2s;
+      }
+
+      .btn-pet:hover {
+        background: var(--naranja);
+        color: var(--blanco);
+      }
+
+      /* ===== SECCIÓN: PROCESO ===== */
+      .section-proceso {
+        padding: 6rem 0;
+        background: var(--blanco);
+      }
+
+      .proceso-step {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.4rem;
+        margin-bottom: 2.4rem;
+      }
+
+      .proceso-num {
+        flex-shrink: 0;
+        width: 52px;
+        height: 52px;
+        background: var(--naranja);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: var(--blanco);
+      }
+
+      .proceso-text h4 {
+        font-size: 1.05rem;
+        margin-bottom: .3rem;
+        color: var(--marron);
+      }
+
+      .proceso-text p {
+        color: var(--gris);
+        font-size: .9rem;
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .proceso-visual {
+        background: linear-gradient(135deg, var(--naranja) 0%, #C94A18 100%);
+        border-radius: 24px;
+        padding: 3.5rem 2rem;
+        text-align: center;
+        color: var(--blanco);
+      }
+
+      .proceso-visual .big-icon {
+        font-size: 5rem;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .proceso-visual h3 {
+        font-size: 1.6rem;
+        margin-bottom: .6rem;
+      }
+
+      .proceso-visual p {
+        opacity: .88;
+        font-size: .95rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .btn-proceso {
+        background: var(--blanco);
+        color: var(--naranja);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        border: none;
+        border-radius: 10px;
+        padding: .75rem 1.8rem;
+        font-size: .95rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform .2s;
+      }
+
+      .btn-proceso:hover {
+        transform: translateY(-2px);
+        color: var(--naranja);
+      }
+
+      /* ===== SECCIÓN: CONTACTO ===== */
+      .section-contacto {
+        padding: 6rem 0;
+        background: var(--crema);
+      }
+
+      .form-huellitas .form-control,
+      .form-huellitas .form-select,
+      .form-huellitas textarea {
+        border: 2px solid #E8DDD6;
+        border-radius: 12px;
+        padding: .75rem 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .95rem;
+        background: var(--blanco);
+        color: var(--marron);
+        transition: border-color .2s, box-shadow .2s;
+      }
+
+      .form-huellitas .form-control:focus,
+      .form-huellitas .form-select:focus,
+      .form-huellitas textarea:focus {
+        border-color: var(--naranja);
+        box-shadow: 0 0 0 3px rgba(232, 98, 42, .12);
+        outline: none;
+      }
+
+      .form-huellitas .form-label {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: .9rem;
+        color: var(--marron);
+        margin-bottom: .4rem;
+      }
+
+      .btn-enviar {
+        background: var(--naranja);
+        color: var(--blanco);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        border: none;
+        border-radius: 12px;
+        padding: .9rem 2.5rem;
+        font-size: 1rem;
+        width: 100%;
+        transition: background .2s, transform .2s;
+        cursor: pointer;
+      }
+
+      .btn-enviar:hover {
+        background: #C94A18;
+        transform: translateY(-2px);
+      }
+
+      /* alerta de confirmación */
+      .alert-success-custom {
+        background: #D4EDDA;
+        border: 2px solid #28A745;
+        border-radius: 12px;
+        color: #155724;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        padding: 1rem 1.4rem;
+        display: none;
+        margin-top: 1rem;
+        align-items: center;
+        gap: .7rem;
+      }
+
+      .alert-success-custom.show {
+        display: flex;
+        animation: fadeIn .4s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .info-card {
+        background: var(--blanco);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        box-shadow: 0 2px 12px rgba(45, 27, 14, .05);
+      }
+
+      .info-card-icon {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        background: var(--crema);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: var(--naranja);
+      }
+
+      .info-card-text h5 {
+        font-size: .85rem;
+        font-weight: 700;
+        color: var(--gris);
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        margin-bottom: .2rem;
+      }
+
+      .info-card-text p {
+        margin: 0;
+        font-size: .95rem;
+        color: var(--marron);
+        font-weight: 600;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background: var(--marron);
+        color: rgba(255, 255, 255, .7);
+        padding: 3rem 0 2rem;
+      }
+
+      footer .brand {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: var(--blanco);
+        margin-bottom: .5rem;
+      }
+
+      footer p {
+        font-size: .88rem;
+        line-height: 1.7;
+        max-width: 320px;
+      }
+
+      footer .footer-link {
+        color: rgba(255, 255, 255, .7);
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: .9rem;
+        display: block;
+        margin-bottom: .5rem;
+        transition: color .2s;
+      }
+
+      footer .footer-link:hover {
+        color: var(--naranja-cl);
+      }
+
+      footer .footer-title {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        color: var(--blanco);
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-divider {
+        border-color: rgba(255, 255, 255, .12);
+        margin: 2rem 0 1rem;
+      }
+
+      .footer-copy {
+        font-size: .82rem;
+        color: rgba(255, 255, 255, .45);
+      }
+
+      /* ===== ANIMACIONES SCROLL ===== */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity .6s ease, transform .6s ease;
+      }
+
+      .fade-up.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        .hero {
+          min-height: auto;
+          padding: 5rem 0 4rem;
+        }
+
+        .hero-stats {
+          gap: 1.2rem;
+        }
+
+        .hero-stat strong {
+          font-size: 1.5rem;
+        }
+
+        .section-mision,
+        .section-mascotas,
+        .section-proceso,
+        .section-contacto {
+          padding: 4rem 0;
+        }
+      }
+
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .hero-animal {
+          animation: none;
+        }
+
+        .fade-up {
+          transition: none;
+        }
+      }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      /* ===== VALIDACIÓN FORMULARIO HTML5 ===== */
+      const form = document.getElementById('formContacto');
+      const alertExito = document.getElementById('alertExito');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+
+        // Simular envío
+        const btn = form.querySelector('.btn-enviar');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Enviando…';
+
+        setTimeout(() => {
+          form.reset();
+          form.classList.remove('was-validated');
+          btn.disabled = false;
+          btn.innerHTML = '<i class="bi bi-send-fill me-2"></i>Enviar mensaje';
+          alertExito.classList.add('show');
+
+          setTimeout(() => alertExito.classList.remove('show'), 6000);
+        }, 1200);
+      });
+
+      /* ===== ANIMACIONES SCROLL ===== */
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+      /* ===== NAVBAR SHADOW ON SCROLL ===== */
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.navbar-huellitas');
+        nav.style.boxShadow = window.scrollY > 10
+          ? '0 4px 20px rgba(45,27,14,.12)'
+          : '0 2px 16px rgba(45,27,14,.08)';
+      });
+    </script>
+</body>
+
+</html>
