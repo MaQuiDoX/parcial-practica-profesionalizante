@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -52,127 +53,127 @@
         </div>
     </nav>
 
+<section class="hero-contacto">
+    <div class="container text-center fade-up">
+        <p class="section-label">Contacto</p>
+        <h1 class="hero-contacto-title">Estamos para ayudarte</h1>
+        <p class="hero-contacto-subtitle">
+            ¿Tenés dudas sobre alguna mascota o querés iniciar el proceso de adopción?
+            Escribinos por el formulario o contactanos directamente.
+        </p>
+    </div>
+</section>
     <!-- ===== CONTACTO ===== -->
-    <section class="section-contacto" id="contacto" aria-labelledby="contacto-titulo">
-        <div class="container">
+    <section class="section-contacto" id="contacto">
+    <div class="container">
 
-            <div class="text-center mb-5 fade-up">
-                <p class="section-label">Escribinos</p>
-                <h2 class="section-title" id="contacto-titulo">Contactanos</h2>
-                <p class="text-muted">¿Querés adoptar o ser voluntario? ¡Estamos para ayudarte!</p>
-            </div>
-
-            <div class="row g-5 align-items-start">
-
-                <!-- Info de contacto -->
-                <div class="col-lg-4 fade-up">
-
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="bi bi-envelope-fill"></i></div>
-                        <div class="info-card-text">
-                            <h5>Correo electrónico</h5>
-                            <p>huellitas@refugio.com</p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="bi bi-telephone-fill"></i></div>
-                        <div class="info-card-text">
-                            <h5>Teléfono</h5>
-                            <p>+54 261 555-0000</p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                        <div class="info-card-text">
-                            <h5>Dirección</h5>
-                            <p>Calle Los Nogales 1234, Mendoza</p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="bi bi-clock-fill"></i></div>
-                        <div class="info-card-text">
-                            <h5>Horario de atención</h5>
-                            <p>Lun–Vie: 9 a 18 hs · Sáb: 10 a 14 hs</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Formulario -->
-                <div class="col-lg-8 fade-up">
-                    <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm">
-
-                        <form id="formContacto" class="form-huellitas" novalidate>
-
-                            <div class="row g-3">
-
-                                <div class="col-sm-6">
-                                    <label for="nombre" class="form-label">Nombre completo *</label>
-                                    <input type="text" id="nombre" name="nombre" class="form-control"
-                                        placeholder="Ej. María González" required minlength="2" maxlength="80">
-                                    <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="email" class="form-label">Correo electrónico *</label>
-                                    <input type="email" id="email" name="email" class="form-control"
-                                        placeholder="tucorreo@ejemplo.com" required>
-                                    <div class="invalid-feedback">Ingresá un correo válido.</div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" id="telefono" name="telefono" class="form-control"
-                                        placeholder="+54 261 000-0000" pattern="[+\d\s\-]{7,20}">
-                                    <div class="invalid-feedback">Formato inválido.</div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="motivo" class="form-label">Motivo de contacto *</label>
-                                    <select id="motivo" name="motivo" class="form-select" required>
-                                        <option value="" disabled selected>Seleccioná una opción</option>
-                                        <option value="adopcion">Quiero adoptar</option>
-                                        <option value="voluntario">Ser voluntario</option>
-                                        <option value="donacion">Hacer una donación</option>
-                                        <option value="otro">Otro</option>
-                                    </select>
-                                    <div class="invalid-feedback">Seleccioná un motivo.</div>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="mensaje" class="form-label">Mensaje *</label>
-                                    <textarea id="mensaje" name="mensaje" class="form-control" rows="4"
-                                        placeholder="Contanos un poco sobre vos y tu interés..." required minlength="10"
-                                        maxlength="1000"></textarea>
-                                    <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
-                                </div>
-
-                                <div class="col-12">
-                                    <button type="submit" class="btn-enviar">
-                                        <i class="bi bi-send-fill me-2"></i>Enviar mensaje
-                                    </button>
-                                </div>
-
-                            </div><!-- /row -->
-
-                        </form>
-
-                        <div class="alert-success-custom" id="alertExito" role="alert" aria-live="polite">
-                            <span style="font-size:1.4rem">✅</span>
-                            <span>¡Mensaje enviado con éxito! Te contactaremos a la brevedad.</span>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+        <div class="text-center mb-5 fade-up">
+            <p class="section-label">Escribinos</p>
+            <h2 class="section-title">Contactanos</h2>
+            <p class="text-muted">¿Querés adoptar o ser voluntario? ¡Estamos para ayudarte!</p>
         </div>
-    </section>
-    <!-- /CONTACTO -->
 
+        <div class="row g-5">
+
+            <div class="col-lg-4 fade-up">
+                <div class="info-card">
+                    <div class="info-card-text">
+                        <h5>Correo electrónico</h5>
+                        <p>huellitas@refugio.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-text">
+                        <h5>Teléfono</h5>
+                        <p>+54 261 555-0000</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card-text">
+                        <h5>Dirección</h5>
+                        <p>Godoy Cruz, Mendoza</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 fade-up">
+                <div class="bg-white rounded-4 p-4 p-md-5 shadow-sm">
+
+                    <form id="formContacto" class="form-huellitas" novalidate>
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" required>
+                                <div class="invalid-feedback">Ingresá tu nombre.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" required>
+                                <div class="invalid-feedback">Ingresá un email válido.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Motivo</label>
+                                <select class="form-select" required>
+                                    <option value="">Seleccioná</option>
+                                    <option>Quiero adoptar un perro</option>
+                                    <option>Quiero adoptar un gato</option>
+                                    <option>Quiero ser voluntario</option>
+                                    <option>Quiero donar</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Mensaje</label>
+                                <textarea class="form-control" rows="4" required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn-enviar">
+                                    Enviar mensaje
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <div class="mt-4">
+                        <iframe
+                            src="https://www.google.com/maps?q=Godoy%20Cruz,%20Mendoza,%20Argentina&output=embed"
+                            width="100%"
+                            height="350"
+                            style="border:0;border-radius:20px;"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- /CONTACTO -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastConfirmacion" class="toast text-bg-success border-0">
+        <div class="d-flex">
+            <div class="toast-body">
+                ¡Gracias! Tu mensaje fue enviado correctamente.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
 
     <!-- ===== FOOTER ===== -->
     <footer role="contentinfo">
@@ -896,6 +897,22 @@
                 transition: none;
             }
         }
+        .hero-contacto{
+    background: linear-gradient(135deg, var(--naranja) 0%, #C94A18 100%);
+    padding: 5rem 0;
+}
+
+.hero-contacto-title{
+    color:white;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight:900;
+}
+
+.hero-contacto-subtitle{
+    color: rgba(255,255,255,.9);
+    max-width:700px;
+    margin:auto;
+}
     </style>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -903,31 +920,21 @@
     <script>
         /* ===== VALIDACIÓN FORMULARIO HTML5 ===== */
         const form = document.getElementById('formContacto');
-        const alertExito = document.getElementById('alertExito');
+const toastElement = document.getElementById('toastConfirmacion');
+const toast = new bootstrap.Toast(toastElement);
 
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+form.addEventListener('submit', function(e){
+    e.preventDefault();
 
-            if (!form.checkValidity()) {
-                form.classList.add('was-validated');
-                return;
-            }
+    if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+    }
 
-            // Simular envío
-            const btn = form.querySelector('.btn-enviar');
-            btn.disabled = true;
-            btn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Enviando…';
-
-            setTimeout(() => {
-                form.reset();
-                form.classList.remove('was-validated');
-                btn.disabled = false;
-                btn.innerHTML = '<i class="bi bi-send-fill me-2"></i>Enviar mensaje';
-                alertExito.classList.add('show');
-
-                setTimeout(() => alertExito.classList.remove('show'), 6000);
-            }, 1200);
-        });
+    form.reset();
+    form.classList.remove('was-validated');
+    toast.show();
+});
 
         /* ===== ANIMACIONES SCROLL ===== */
         const observer = new IntersectionObserver((entries) => {
