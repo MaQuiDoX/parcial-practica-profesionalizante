@@ -17,7 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/perros.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/perros.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 
 <body>
@@ -38,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link-custom active" href="index.html" aria-current="page">Inicio</a>
+                        <a class="nav-link-custom" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="perros.html">Perros</a>
+                        <a class="nav-link-custom active" href="perros.html" aria-current="page">Perros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link-custom" href="gatos.html">Gatos</a>
@@ -67,149 +69,9 @@
                 <h2 class="section-title" id="mascotas-titulo">Conocé a nuestras mascotas</h2>
             </div>
 
-            <div class="row g-4">
-
-                <!-- Perro 1 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/lupitafacu.png" alt="Lupita" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Lupita</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 8 meses · Hembra · Mediana · Cariñosa
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 2 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/goat.jpg" alt="Arceus" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Arceus</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 2 meses · Bebé · Pequeño · Juguetón
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 3 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/perro3.jpg" alt="Max" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Max</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 2 años · Macho · Grande · Tranquilo
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 4 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/mushunico.png" alt="Mushu" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Mushu</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 1 año · Macho · Mediano · Saltarín
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 5 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/perro1.webp" alt="Sanson" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Sanson</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 3 meses · Macho· Bebé · Cariñoso
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 6  -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/perro2.jpg" alt="Canela" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Canela</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 3 años · Hembra· Grande · Tranquila
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 7 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/perro4.jpg" alt="Milo" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Milo</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 4 Meses · Macho · Bebé · Juguetón
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Perro 8 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Perros/descarga.jpg" alt="Freya" class="pet-image">
-                            <span class="pet-badge">Perro</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Freya</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 1 año · Hembra · Grande · Saltarina
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="text-center mt-5 fade-up">
-                    <a href="perros.html" class="btn-pet me-3 btn-pet-grande">
-                        Ver todos los perros
-                    </a>
-                    <a href="gatos.html" class="btn-pet btn-pet-grande">
-                        Ver todos los gatos
-                    </a>
-                </div>
-
-            </div>
+            {% include 'catalogo.html' %}
+        </div>
     </section>
-
-    <form id="formContacto" class="form-huellitas" novalidate>
 
 
         <!-- ===== FOOTER ===== -->
@@ -263,7 +125,7 @@
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script src="js/perros.js"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
 
 </body>
 

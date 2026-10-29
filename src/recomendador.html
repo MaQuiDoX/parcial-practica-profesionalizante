@@ -1,0 +1,17 @@
+<section class="container py-5" aria-labelledby="recomendador-titulo">
+  <div class="panel-huellitas">
+    <h2 id="recomendador-titulo">Encontrá un compañero</h2>
+    <p>Elegí tus preferencias. Un recomendador por reglas ordena hasta tres mascotas según las coincidencias.</p>
+    <form id="formRecomendador" class="row g-3">
+      <div class="col-md-5"><label for="especie" class="form-label">Prefiero</label>
+        <select id="especie" name="especie" class="form-select"><option value="perro">Perro</option><option value="gato">Gato</option></select>
+      </div>
+      <div class="col-md-5"><label for="energia" class="form-label">Actividad compatible con mi rutina</label>
+        <select id="energia" name="energia" class="form-select"><option value="tranquila">Tranquila</option><option value="activa">Activa</option></select>
+      </div>
+      <div class="col-md-2 align-self-end"><button class="btn-pet" type="submit">Recomendar</button></div>
+    </form>
+    <div id="recomendaciones" aria-live="polite" class="mt-4"></div>
+    <p class="small mt-3">Datos de demostración. Es una orientación inicial: el refugio debe evaluar cada adopción. El sistema usa reglas, sin entrenar un modelo de IA.</p>
+  </div>
+</section>

@@ -1,0 +1,146 @@
+[
+  {
+    "nombre": "Lupita",
+    "especie": "perro",
+    "imagen": "Perros/lupitafacu.png",
+    "descripcion": "8 meses · Hembra · Mediana · Cariñosa",
+    "edad_meses": 8,
+    "tamano": "mediano",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Arceus",
+    "especie": "perro",
+    "imagen": "Perros/goat.jpg",
+    "descripcion": "2 meses · Bebé · Pequeño · Juguetón",
+    "edad_meses": 2,
+    "tamano": "pequeno",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Max",
+    "especie": "perro",
+    "imagen": "Perros/perro3.jpg",
+    "descripcion": "2 años · Macho · Grande · Tranquilo",
+    "edad_meses": 24,
+    "tamano": "grande",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Mushu",
+    "especie": "perro",
+    "imagen": "Perros/mushunico.png",
+    "descripcion": "1 año · Macho · Mediano · Saltarín",
+    "edad_meses": 12,
+    "tamano": "mediano",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Sanson",
+    "especie": "perro",
+    "imagen": "Perros/perro1.webp",
+    "descripcion": "3 meses · Macho· Bebé · Cariñoso",
+    "edad_meses": 3,
+    "tamano": "pequeno",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Canela",
+    "especie": "perro",
+    "imagen": "Perros/perro2.jpg",
+    "descripcion": "3 años · Hembra· Grande · Tranquila",
+    "edad_meses": 36,
+    "tamano": "grande",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Milo",
+    "especie": "perro",
+    "imagen": "Perros/perro4.jpg",
+    "descripcion": "4 Meses · Macho · Bebé · Juguetón",
+    "edad_meses": 4,
+    "tamano": "pequeno",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Freya",
+    "especie": "perro",
+    "imagen": "Perros/descarga.jpg",
+    "descripcion": "1 año · Hembra · Grande · Saltarina",
+    "edad_meses": 12,
+    "tamano": "grande",
+    "energia": "activa"
+  },
+  {
+    "nombre": "Morita",
+    "especie": "gato",
+    "imagen": "Gatos/morita.webp",
+    "descripcion": "1 año · Hembra",
+    "edad_meses": 12,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Pancho",
+    "especie": "gato",
+    "imagen": "Gatos/pancho.webp",
+    "descripcion": "4 meses · Macho",
+    "edad_meses": 4,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Lulu",
+    "especie": "gato",
+    "imagen": "Gatos/lulu.webp",
+    "descripcion": "6 meses · Macho",
+    "edad_meses": 6,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Pedrito",
+    "especie": "gato",
+    "imagen": "Gatos/pedrito.webp",
+    "descripcion": "1 año · Macho",
+    "edad_meses": 12,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Pedro y Pitufino",
+    "especie": "gato",
+    "imagen": "Gatos/pedro y pitufino.webp",
+    "descripcion": "1 año los dos · Macho y Macho · Inseparables",
+    "edad_meses": 12,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Leila",
+    "especie": "gato",
+    "imagen": "Gatos/leila.webp",
+    "descripcion": "9 meses · Hembra · Superheroína",
+    "edad_meses": 9,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Marcos",
+    "especie": "gato",
+    "imagen": "Gatos/marcos.webp",
+    "descripcion": "3 años · Macho",
+    "edad_meses": 36,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  },
+  {
+    "nombre": "Manu",
+    "especie": "gato",
+    "imagen": "Gatos/manu.webp",
+    "descripcion": "3 meses · Macho",
+    "edad_meses": 3,
+    "tamano": "pequeno",
+    "energia": "tranquila"
+  }
+]

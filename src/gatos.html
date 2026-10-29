@@ -17,7 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/gatos.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gatos.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 
 <body>
@@ -37,13 +39,13 @@
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link-custom active" href="index.html" aria-current="page">Inicio</a>
+                        <a class="nav-link-custom" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link-custom" href="perros.html">Perros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-custom" href="gatos.html">Gatos</a>
+                        <a class="nav-link-custom active" href="gatos.html" aria-current="page">Gatos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link-custom" href="adopcion.html">Adopción</a>
@@ -66,153 +68,10 @@
                 <h2 class="section-title" id="mascotas-titulo">Conocé a nuestras mascotas</h2>
             </div>
 
-            <div class="row g-4">
-
-                <!-- Gato 1 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/morita.webp" alt="Morita" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Morita</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 1 año · Hembra
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 2 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/pancho.webp" alt="Pancho" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Pancho</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 4 meses · Macho
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 3 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/lulu.webp" alt="Lulu" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Lulu</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 6 meses · Macho
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 4 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/pedrito.webp" alt="Pedrito" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Pedrito</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 1 año · Macho
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 5 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/pedro y pitufino.webp" alt="Pedro y Pitufino" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Pedro y Pitufino</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 1 año los dos · Macho y Macho · Inseparables
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 6  -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/leila.webp" alt="Leila" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Leila</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 9 meses · Hembra · Superheroína
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 7 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/marcos.webp" alt="Marcos" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Marcos</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 3 años · Macho
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-                <!-- Gato 8 -->
-                <div class="col-sm-6 col-lg-3 fade-up">
-                    <article class="pet-card">
-                        <div class="pet-img-wrap">
-                            <img src="Gatos/manu.webp" alt="Lupita" class="pet-image">
-                            <span class="pet-badge">Gato</span>
-                        </div>
-                        <div class="pet-card-body">
-                            <h4>Manu</h4>
-                            <p class="pet-meta">
-                                <i class="bi bi-calendar3"></i> 3 meses · Macho
-                            </p>
-                            <a href="adopcion.html" class="btn-pet">Ver más</a>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-
-            <div class="text-center mt-5 fade-up">
-                <a href="perros.html" class="btn-pet me-3 btn-pet-grande">
-                    Ver todos los perros
-                </a>
-                <a href="gatos.html" class="btn-pet btn-pet-grande">
-                    Ver todos los gatos
-                </a>
-            </div>
-
+            {% include 'catalogo.html' %}
         </div>
     </section>
     <!-- /MASCOTAS -->
-
-    <form id="formContacto" class="form-huellitas" novalidate>
 
         <!-- ===== FOOTER ===== -->
         <footer role="contentinfo">
@@ -265,7 +124,7 @@
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script src="js/gatos.js"></script>
+        <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
 
 </body>
 

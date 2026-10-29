@@ -1,0 +1,31 @@
+<div class="panel-huellitas mb-4">
+  <label for="buscar" class="form-label">Buscar por nombre o descripción</label>
+  <input id="buscar" type="search" class="form-control mb-3" placeholder="Por ejemplo: Lupita o cachorro">
+  <div class="d-flex flex-wrap gap-3 align-items-center">
+    <label for="edad">Edad</label>
+    <select id="edad" class="form-select filtro-select">
+      <option value="todos">Todas</option><option value="cachorro">Menos de un año</option><option value="adulto">Un año o más</option>
+    </select>
+    <label><input id="solo-favoritos" type="checkbox"> Solo favoritos</label>
+  </div>
+  <p id="resultado-busqueda" role="status" class="mt-3 mb-0"></p>
+</div>
+<div class="row g-4" id="catalogo">
+  {% for mascota in mascotas %}
+  <div class="col-sm-6 col-lg-3 ficha-mascota" data-edad="{{ mascota.edad_meses }}" data-id="{{ mascota.id }}">
+    <article class="pet-card h-100">
+      <div class="pet-img-wrap">
+        <img src="{{ url_for('static', filename=mascota.imagen) }}" alt="{{ mascota.nombre }}" class="pet-image" loading="lazy">
+        <span class="pet-badge">{{ mascota.especie|capitalize }}</span>
+      </div>
+      <div class="pet-card-body">
+        <h3 class="h5">{{ mascota.nombre }}</h3>
+        <p class="pet-meta">{{ mascota.descripcion }}</p>
+        <a href="contacto.html" class="btn-pet">Consultar adopción</a>
+        <button type="button" class="btn-pet mt-2 favorito" data-id="{{ mascota.id }}" aria-pressed="{{ 'true' if mascota.id in favoritos else 'false' }}">{{ '♥ Favorito' if mascota.id in favoritos else '♡ Guardar' }}</button>
+      </div>
+    </article>
+  </div>
+  {% endfor %}
+</div>
+<p id="error-catalogo" role="alert" class="mt-3"></p>

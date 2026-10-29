@@ -1,0 +1,9 @@
+.panel-huellitas { background: white; border: 1px solid #e8ddd6; border-radius: 18px; padding: 1.5rem; }
+.filtro-select { width: auto; }
+.pet-image { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; }
+.favorito[aria-pressed="true"] { background: var(--naranja); color: white; }
+.navbar-huellitas.con-sombra { box-shadow: 0 4px 20px rgba(45,27,14,.12); }
+[hidden] { display: none !important; }
+/* La página sigue siendo legible si JavaScript está desactivado. */
+.fade-up { opacity: 1; transform: none; }
+button:disabled { opacity: .65; cursor: wait; }
